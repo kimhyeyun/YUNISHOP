@@ -1,0 +1,42 @@
+* {
+    font-family: 'Yeon Sung', cursive;
+}
+
+.header{
+    width: 100%;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.content {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.headPageALink a{
+    color: #6d6d6d;
+}
+
+.sidebar li {
+    text-decoration: none;
+}
+
+.id_input_re_1{
+    color: green;
+    display: none;
+}
+
+.id_input_re_2{
+    color: red;
+    display: none;
+}
