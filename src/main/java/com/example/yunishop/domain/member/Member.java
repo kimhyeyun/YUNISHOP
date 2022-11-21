@@ -1,10 +1,7 @@
 package com.example.yunishop.domain.member;
 
 import com.example.yunishop.constant.Role;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,4 +24,17 @@ public class Member {
     private String address;
     private String addtionalAddress;
     private Role role;
+
+    @Builder
+    public Member(String name, String memberId, String password, int postCode, String address, String addtionalAddress) {
+        this.name = name;
+        this.memberId = memberId;
+        this.password = password;
+        this.postCode = postCode;
+        this.address = address;
+        this.addtionalAddress = addtionalAddress;
+        this.role = Role.USER;
+    }
 }
+
+
