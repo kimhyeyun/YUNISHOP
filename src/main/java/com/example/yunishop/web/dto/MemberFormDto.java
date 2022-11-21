@@ -2,6 +2,7 @@ package com.example.yunishop.web.dto;
 
 import com.example.yunishop.domain.member.Member;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
@@ -10,6 +11,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 @Setter
+@Getter
 @NoArgsConstructor
 public class MemberFormDto {
 
